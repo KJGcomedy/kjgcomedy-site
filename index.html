@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KJG Comedy: Funny Video Ads for Brands, Apps and SaaS</title>
+<meta name="description" content="Comedy video ads written and performed by a Groundlings-trained actor. Fully edited, ready to post in about a week. Packages from $295.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Courier+Prime:wght@400;700&display=swap">
+<style>
+/* Layout: an actor's marked-up script. White page, navy ink, one highlighter-yellow swipe; screenplay type for runtimes and stage directions. */
+:root {
+  --paper: #fbfcfe;
+  --panel: #eef2f8;
+  --ink: #14213d;
+  --muted: #59627a;
+  --line: #d9dfea;
+  --hl: #ffe24d;
+  --hl-ink: #14213d;
+  --screen: #14213d;
+  --screen-ink: #f3f5fa;
+  --display: "Bricolage Grotesque", "Arial Black", system-ui, sans-serif;
+  --body: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --script: "Courier Prime", "Courier New", Courier, monospace;
+  --wrap: 1120px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0e1528; --panel: #162039; --ink: #f1f4fa; --muted: #a4aec4; --line: #26314d;
+    --hl: #f6d63a; --hl-ink: #14213d; --screen: #1b2747; --screen-ink: #f1f4fa; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0e1528; --panel: #162039; --ink: #f1f4fa; --muted: #a4aec4; --line: #26314d;
+  --hl: #f6d63a; --hl-ink: #14213d; --screen: #1b2747; --screen-ink: #f1f4fa; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper); color: var(--ink);
+  font: 400 1.0625rem/1.6 var(--body);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--hl); outline-offset: 3px; border-radius: 4px; }
+
+.band { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.wrap { max-width: var(--wrap); margin: 0 auto; }
+
+h1, h2, h3 { font-family: var(--display); font-weight: 800; letter-spacing: -0.02em; line-height: 1.04; text-wrap: balance; margin: 0; }
+h2 { font-size: clamp(2rem, 4.4vw, 3.1rem); }
+h3 { font-size: 1.35rem; font-weight: 600; letter-spacing: -0.01em; }
+p { margin: 0; }
+.script { font-family: var(--script); font-size: 0.9rem; letter-spacing: 0.02em; }
+.direction { font-family: var(--script); color: var(--muted); font-size: 0.95rem; }
+.lede { color: var(--muted); max-width: 60ch; }
+
+/* highlighter swipe */
+.hl {
+  background-image: linear-gradient(transparent 12%, var(--hl) 12%, var(--hl) 88%, transparent 88%);
+  background-repeat: no-repeat; background-size: 100% 100%;
+  color: var(--hl-ink); padding: 0 0.12em; margin: 0 -0.06em;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  animation: swipe 0.8s cubic-bezier(.6,.05,.3,1) 0.25s both;
+}
+@keyframes swipe { from { background-size: 0% 100%; } to { background-size: 100% 100%; } }
+@media (prefers-reduced-motion: reduce) { .hl { animation: none; } }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5em;
+  font: 600 1rem/1 var(--body); text-decoration: none;
+  padding: 0.95em 1.4em; border-radius: 999px; border: 2px solid var(--ink);
+  transition: transform .15s ease, background-color .15s ease, color .15s ease;
+}
+.btn-solid { background: var(--ink); color: var(--paper); }
+.btn-solid:hover { transform: translateY(-2px); }
+.btn-line { background: transparent; color: var(--ink); }
+.btn-line:hover { background: var(--hl); color: var(--hl-ink); border-color: var(--hl); }
+
+/* header */
+.top { padding-block: 22px; }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.mark { font-family: var(--display); font-weight: 800; font-size: 1.35rem; letter-spacing: -0.02em; text-decoration: none; }
+.mark span { font-family: var(--script); font-weight: 400; font-size: 0.85rem; color: var(--muted); margin-left: 0.5em; letter-spacing: 0.04em; }
+.nav { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; }
+.nav a { text-decoration: none; font-weight: 500; font-size: 0.95rem; }
+.nav a:hover { text-decoration: underline; text-decoration-color: var(--hl); text-decoration-thickness: 3px; text-underline-offset: 5px; }
+
+/* hero */
+.hero { padding-block: 40px 72px; }
+.hero .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 56px; align-items: center; }
+.hero h1 { font-size: clamp(2.8rem, 6.6vw, 5.2rem); margin-top: 14px; }
+.hero .lede { margin-top: 22px; font-size: 1.15rem; }
+.hero .ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+.fade { color: var(--muted); }
+.still { margin: 0; }
+.still img { display: block; width: 100%; height: auto; border-radius: 6px; }
+.still figcaption { margin-top: 10px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+/* proof */
+.proof { border-block: 1px solid var(--line); padding-block: 26px; }
+.proof ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.proof strong { display: block; font-family: var(--display); font-weight: 800; font-size: 1.9rem; letter-spacing: -0.02em; line-height: 1.1; }
+.proof span { color: var(--muted); font-size: 0.95rem; }
+
+section.block { padding-block: 88px; }
+.head { display: grid; gap: 14px; margin-bottom: 40px; align-content: start; }
+
+/* work */
+.reels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.reel { background: var(--screen); color: var(--screen-ink); border-radius: 6px; overflow: hidden; display: flex; flex-direction: column; text-decoration: none; transition: transform .2s ease; }
+.reel:hover { transform: translateY(-4px); }
+.reel .frame { aspect-ratio: 9 / 11; max-width: 100%; padding: 22px; display: flex; flex-direction: column; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.12); position: relative; }
+.reel .slug { font-family: var(--script); font-weight: 700; font-size: 0.95rem; letter-spacing: 0.03em; }
+.reel .play { width: 64px; height: 64px; border-radius: 50%; background: var(--hl); display: grid; place-items: center; align-self: center; transition: transform .2s ease; }
+.reel:hover .play { transform: scale(1.08); }
+.reel .play svg { width: 22px; height: 22px; margin-left: 4px; fill: var(--hl-ink); }
+.reel .rt { font-family: var(--script); font-size: 0.85rem; opacity: 0.8; display: flex; justify-content: space-between; }
+.reel .meta { padding: 18px 22px 22px; display: grid; gap: 6px; }
+.reel .meta h3 { color: var(--screen-ink); }
+.reel .meta p { color: var(--screen-ink); opacity: 0.78; font-size: 0.97rem; }
+.more { margin-top: 28px; display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+.more a { font-weight: 600; text-decoration-color: var(--hl); text-decoration-thickness: 3px; text-underline-offset: 5px; }
+
+/* packages */
+.packages { background: var(--panel); }
+.sheet { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.pkg { background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 26px 22px 22px; display: flex; flex-direction: column; gap: 14px; }
+.pkg .rt { font-family: var(--script); font-size: 0.85rem; color: var(--muted); display: flex; justify-content: space-between; }
+.pkg .price { font-family: var(--display); font-weight: 800; font-size: 2.6rem; letter-spacing: -0.03em; line-height: 1; font-variant-numeric: tabular-nums; }
+.pkg .price small { display: block; font-family: var(--body); font-weight: 500; font-size: 0.85rem; letter-spacing: 0; color: var(--muted); margin-top: 8px; }
+.pkg p { color: var(--muted); font-size: 0.97rem; flex: 1; }
+.pkg .btn { width: 100%; }
+.pkg.pick { border: 2px solid var(--ink); }
+.pkg .tag { font-family: var(--script); font-size: 0.8rem; background: var(--hl); color: var(--hl-ink); padding: 2px 8px; border-radius: 3px; }
+.extras { margin-top: 36px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 40px; }
+.extras div { display: grid; gap: 4px; padding-top: 14px; border-top: 1px solid var(--line); }
+.extras strong { font-weight: 600; }
+.extras span { color: var(--muted); font-size: 0.97rem; }
+.custom { margin-top: 30px; color: var(--muted); }
+.custom a { color: var(--ink); font-weight: 600; text-decoration-color: var(--hl); text-decoration-thickness: 3px; text-underline-offset: 5px; }
+
+/* about */
+.about .wrap { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 56px; align-items: start; }
+.about .copy { display: grid; gap: 18px; max-width: 62ch; }
+.credits { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 10px; }
+.credits li { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px dashed var(--line); padding-bottom: 10px; }
+.credits li span:last-child { font-family: var(--script); color: var(--muted); font-size: 0.9rem; text-align: right; }
+.straight { margin-top: 8px; padding: 18px 20px; border-left: 4px solid var(--hl); background: var(--panel); border-radius: 0 6px 6px 0; }
+.straight a { font-weight: 600; }
+
+/* steps */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; counter-reset: s; }
+.steps li { counter-increment: s; display: grid; gap: 8px; align-content: start; }
+.steps li::before { content: "SCENE " counter(s); font-family: var(--script); font-weight: 700; font-size: 0.85rem; color: var(--muted); letter-spacing: 0.04em; }
+.steps p { color: var(--muted); font-size: 0.97rem; }
+
+/* faq */
+.faq .wrap { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 56px; align-items: start; }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq details:first-of-type { border-top: 1px solid var(--line); }
+.faq summary { cursor: pointer; list-style: none; padding: 18px 36px 18px 0; font-weight: 600; font-size: 1.05rem; position: relative; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: 4px; top: 50%; transform: translateY(-50%); font-family: var(--script); font-size: 1.3rem; color: var(--muted); }
+.faq details[open] summary::after { content: "\2013"; }
+.faq details p { color: var(--muted); padding-bottom: 18px; max-width: 62ch; }
+
+/* closer */
+.closer { background: var(--screen); color: var(--screen-ink); }
+.closer .wrap { display: grid; gap: 22px; justify-items: start; }
+.closer h2 { color: var(--screen-ink); }
+.closer p { opacity: 0.8; max-width: 52ch; }
+.closer .btn-solid { background: var(--hl); color: var(--hl-ink); border-color: var(--hl); }
+.closer .btn-line { color: var(--screen-ink); border-color: var(--screen-ink); }
+.closer .btn-line:hover { color: var(--hl-ink); }
+.closer .ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+.contact { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; font-family: var(--script); }
+.contact code { font-family: var(--script); user-select: all; }
+.copy-btn { font: 600 0.85rem var(--body); background: transparent; color: var(--screen-ink); border: 1px solid currentColor; border-radius: 999px; padding: 0.4em 0.9em; cursor: pointer; }
+
+footer { padding-block: 34px; border-top: 1px solid var(--line); }
+footer .wrap { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color: var(--muted); font-size: 0.93rem; }
+footer nav { display: flex; gap: 18px; flex-wrap: wrap; }
+footer a { text-decoration: none; }
+footer a:hover { color: var(--ink); text-decoration: underline; }
+
+@media (max-width: 960px) {
+  .hero .wrap, .about .wrap, .faq .wrap { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  .sheet, .steps, .proof ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .reels { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+}
+@media (max-width: 680px) {
+  .reels, .sheet, .extras { grid-template-columns: minmax(0, 1fr); }
+  .reel .frame { aspect-ratio: 16 / 9; }
+  section.block { padding-block: 64px; }
+  .nav a:not(.btn) { display: none; }
+}
+@media (max-width: 420px) {
+  .steps, .proof ul { grid-template-columns: minmax(0, 1fr); }
+}
+</style>
+<meta property="og:title" content="KJG Comedy">
+<meta property="og:description" content="Comedy video ads written and performed by a Groundlings-trained actor. Packages from $295.">
+<meta property="og:image" content="https://kjgcomedy.com/kjg-comedy-characters.jpg">
+<meta property="og:url" content="https://kjgcomedy.com/">
+<link rel="canonical" href="https://kjgcomedy.com/">
+</head>
+<body>
+
+
+<header class="top band">
+  <div class="wrap">
+    <a class="mark" href="#top">KJG Comedy<span>EST. 1998</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#packages">Packages</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-line" href="https://calendly.com/kerbyjoegrubb/30min" target="_blank" rel="noopener">Book a call</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero band">
+    <div class="wrap">
+      <div>
+        <p class="script fade">FADE IN:</p>
+        <h1>Comedy ads people <span class="hl">actually watch.</span></h1>
+        <p class="lede">Written and performed by a Groundlings-trained actor who looks like your customer, or your CEO. Comedy ads and on-camera spokesperson videos for apps, SaaS and consumer brands.</p>
+        <div class="ctas">
+          <a class="btn btn-solid" href="#packages">See packages</a>
+          <a class="btn btn-line" href="https://calendly.com/kerbyjoegrubb/30min" target="_blank" rel="noopener">Book a call</a>
+        </div>
+      </div>
+      <figure class="still">
+        <a href="https://vimeo.com/showcase/12438763" target="_blank" rel="noopener">
+          <img src="kjg-comedy-characters.jpg" width="1600" height="900" alt="KJG playing three comedy characters for brand video ads">
+        </a>
+        <figcaption class="direction"><span>(three characters, one actor)</span><span>Same guy. Really.</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="proof band" aria-label="Track record">
+    <div class="wrap">
+      <ul>
+        <li><strong>600+</strong><span>client video projects</span></li>
+        <li><strong>100+</strong><span>comedy ads written and performed</span></li>
+        <li><strong>100%</strong><span>Job Success, Top Rated Plus on Upwork</span></li>
+        <li><strong>Groundlings</strong><span>Advanced Sketch Writing Lab</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block band" id="work">
+    <div class="wrap">
+      <div class="head">
+        <p class="script fade">CUT TO:</p>
+        <h2>Funny works for any product. Even the boring ones.</h2>
+      </div>
+      <div class="reels">
+        <a class="reel" href="https://vimeo.com/1241023575" target="_blank" rel="noopener">
+          <div class="frame">
+            <span class="slug">INT. RESTAURANT WALK-IN COOLER</span>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
+            <span class="rt"><span>B2B SOFTWARE</span><span>RT 0:46</span></span>
+          </div>
+          <div class="meta">
+            <h3>The Cooler</h3>
+            <p>A talking walk-in cooler named Tony Baloney sells restaurant pricing software.</p>
+          </div>
+        </a>
+        <a class="reel" href="https://vimeo.com/937505868" target="_blank" rel="noopener">
+          <div class="frame">
+            <span class="slug">INT. THERAPIST'S OFFICE</span>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
+            <span class="rt"><span>PHYSICAL PRODUCT</span><span>RT 0:56</span></span>
+          </div>
+          <div class="meta">
+            <h3>Therapy</h3>
+            <p>One couples-therapy session, two characters, one very specific problem.</p>
+          </div>
+        </a>
+        <a class="reel" href="https://vimeo.com/1099579840" target="_blank" rel="noopener">
+          <div class="frame">
+            <span class="slug">INT. CYBERSTORE - VIBRATING</span>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
+            <span class="rt"><span>ONLINE STORE</span><span>RT 0:42</span></span>
+          </div>
+          <div class="meta">
+            <h3>LJ Discounts</h3>
+            <p>One vibration plate, zero restraint.</p>
+          </div>
+        </a>
+      </div>
+      <p class="more"><span class="direction">(beat)</span> <a href="https://vimeo.com/showcase/12438763" target="_blank" rel="noopener">See the full comedy portfolio</a></p>
+    </div>
+  </section>
+
+  <section class="block band packages" id="packages">
+    <div class="wrap">
+      <div class="head">
+        <p class="script fade">THE CALL SHEET</p>
+        <h2>Pick your length. I'll make it funny.</h2>
+        <p class="lede">Every video arrives fully edited and ready to post: filming, full edit, captions and organic social use included. Standard delivery is about one week.</p>
+      </div>
+      <div class="sheet">
+        <article class="pkg">
+          <div class="rt"><span>RT 0:20</span><span>UP TO 20s</span></div>
+          <h3>The One-Liner</h3>
+          <div class="price">$295<small>$395 if I write it</small></div>
+          <p>One joke, one product, zero wasted seconds. Built for the scroll.</p>
+          <a class="btn btn-line" href="https://buy.stripe.com/aFa9AV8VY6V3a0N2oy6Vq01" target="_blank" rel="noopener">Order The One-Liner</a>
+        </article>
+        <article class="pkg pick">
+          <div class="rt"><span>RT 0:35</span><span class="tag">SWEET SPOT</span></div>
+          <h3>The Bit</h3>
+          <div class="price">$395<small>$495 if I write it</small></div>
+          <p>A setup, a turn and a payoff. The sweet spot for paid social.</p>
+          <a class="btn btn-solid" href="https://buy.stripe.com/8x25kFb464MV0qdbZ86Vq02" target="_blank" rel="noopener">Order The Bit</a>
+        </article>
+        <article class="pkg">
+          <div class="rt"><span>RT 0:50</span><span>UP TO 50s</span></div>
+          <h3>The Sketch</h3>
+          <div class="price">$495<small>$645 if I write it</small></div>
+          <p>A full comic scene with room for characters and a real story.</p>
+          <a class="btn btn-line" href="https://buy.stripe.com/00wdRb2xA1AJb4R8MW6Vq03" target="_blank" rel="noopener">Order The Sketch</a>
+        </article>
+        <article class="pkg">
+          <div class="rt"><span>RT 1:05</span><span>UP TO 65s</span></div>
+          <h3>The Full Set</h3>
+          <div class="price">$595<small>$795 if I write it</small></div>
+          <p>The big swing: multiple beats, multiple laughs, one product hero.</p>
+          <a class="btn btn-line" href="https://buy.stripe.com/aFa8wRfkmfrzgpbgfo6Vq04" target="_blank" rel="noopener">Order The Full Set</a>
+        </article>
+      </div>
+      <div class="extras">
+        <div><strong>Want me to write it?</strong><span>Written by KJG: concept and script, +$100 up to 35s, +$150 up to 50s, +$200 up to 65s.</span></div>
+        <div><strong>Not sure what's funny about your product?</strong><span>The Pitch Meeting, $95: three comedy concepts to choose from.</span></div>
+        <div><strong>Running it as a paid ad?</strong><span>Paid-ad usage starts at +30% for 3 months.</span></div>
+        <div><strong>Need more than one?</strong><span>3 videos, 10% off. 5 videos, 10% off plus an alternate punchline on each.</span></div>
+      </div>
+      <p class="custom">Longer video, a series or something different? <a href="https://calendly.com/kerbyjoegrubb/30min" target="_blank" rel="noopener">Book a call</a> and I'll quote it after I see your script and filming details.</p>
+    </div>
+  </section>
+
+  <section class="block band about" id="about">
+    <div class="wrap">
+      <div class="head">
+        <p class="script fade">ENTER KJG</p>
+        <h2>Hi, I'm KJG.</h2>
+        <ul class="credits" aria-label="Selected credits">
+          <li><span>Angie Tribeca</span><span>TBS, dir. Steve Carell</span></li>
+          <li><span>Real Rob</span><span>Netflix, dir. Rob Schneider</span></li>
+          <li><span>Danger Force</span><span>Nickelodeon</span></li>
+          <li><span>Crime Boss: Rockay City</span><span>Lead writer, AAA game</span></li>
+          <li><span>The Groundlings</span><span>Adv. Sketch Writing Lab</span></li>
+        </ul>
+      </div>
+      <div class="copy">
+        <p>I'm a professional actor and comedy writer who makes ads that people choose to watch. I trained at The Groundlings in Los Angeles, all the way through the Advanced Sketch Writing Lab, and I've acted in comedies from Steve Carell's Angie Tribeca to Rob Schneider's Real Rob.</p>
+        <p>I've also been the lead writer and cinematic director on a AAA video game, writing for Kim Basinger, Danny Glover, Michael Rooker and Chuck Norris. Now I bring that same craft to your product: a sharp concept, a real performance and a finished ad, delivered fast.</p>
+        <p>I can play your customer, your expert or your CEO. I work remotely with brands anywhere.</p>
+        <p class="straight">Need it played straight? I'm also an on-camera spokesperson for SaaS, finance and health brands, including technical explainers with 35,000+ views each. <a href="https://vimeo.com/showcase/11923829" target="_blank" rel="noopener">See the spokesperson work</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block band" id="how" style="border-top: 1px solid var(--line);">
+    <div class="wrap">
+      <div class="head">
+        <p class="script fade">HOW IT WORKS</p>
+        <h2>Four scenes. No agency runaround.</h2>
+      </div>
+      <ol class="steps">
+        <li><h3>Pick and pay</h3><p>Choose a package. Checkout takes a minute.</p></li>
+        <li><h3>Tell me the product</h3><p>A short form asks for your product, audience, deadline and any script or brand assets.</p></li>
+        <li><h3>Approve the concept</h3><p>You see the script or concept before I roll camera, so there are no surprises.</p></li>
+        <li><h3>Get your ad</h3><p>Fully edited, captioned and ready to post, in about a week.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block band faq" id="faq" style="border-top: 1px solid var(--line);">
+    <div class="wrap">
+      <div class="head">
+        <p class="script fade">Q&amp;A</p>
+        <h2>Questions people ask before they laugh.</h2>
+      </div>
+      <div>
+        <details><summary>Can comedy work for my product?</summary><p>Almost always. I've made funny ads for restaurant software, personal care products, apps and online stores. If it has a customer with a problem, there's a joke in it.</p></details>
+        <details><summary>Do I need a script?</summary><p>No. Send yours, or add Written by KJG and I'll write it. Not sure where to start? The Pitch Meeting gets you three concepts for $95.</p></details>
+        <details><summary>Can I run it as a paid ad?</summary><p>Yes. Every video includes organic social use. Paid-ad usage is an add-on, starting at +30% for 3 months.</p></details>
+        <details><summary>How fast is delivery?</summary><p>About one week from concept approval. Ask about rush delivery if you're on a deadline.</p></details>
+        <details><summary>Do you post the videos?</summary><p>No. I play a character, your customer, your expert or your CEO, and you post the video on your own channels.</p></details>
+        <details><summary>Can my likeness or voice be used with AI?</summary><p>No. My contract rules out using my likeness or voice to train or generate AI content, and keeps my real name off your ads.</p></details>
+        <details><summary>Can kids appear in the video?</summary><p>I'm happy to play a parent, but I don't film children on camera.</p></details>
+        <details><summary>How do I pay?</summary><p>By card at checkout. Larger projects and series are 50% up front, with the balance due before final files.</p></details>
+        <details><summary>Do you make straight, non-comedy videos?</summary><p>Yes. See the spokesperson work above or book a call.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="block band closer" id="contact">
+    <div class="wrap">
+      <p class="script" style="opacity:.7">SMASH CUT TO:</p>
+      <h2>Let's make your product the <span class="hl">funny one.</span></h2>
+      <p>Pick a package, or book a call and tell me what you're selling.</p>
+      <div class="ctas">
+        <a class="btn btn-solid" href="#packages">See packages</a>
+        <a class="btn btn-line" href="https://calendly.com/kerbyjoegrubb/30min" target="_blank" rel="noopener" id="book-call">Book a call</a>
+      </div>
+      <div class="contact">
+        <span>Email:</span><code id="email">kjgcomedycreator@gmail.com</code>
+        <button class="copy-btn" type="button" id="copy-email">Copy</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="band">
+  <div class="wrap">
+    <span>&copy; 2026 KJG Comedy &middot; Comedy ads and on-camera spokesperson videos</span>
+    <nav aria-label="Portfolio">
+      <a href="https://vimeo.com/showcase/12438763" target="_blank" rel="noopener">Comedy Ads</a>
+      <a href="https://vimeo.com/showcase/11923829" target="_blank" rel="noopener">Spokesperson</a>
+      <a href="https://vimeo.com/showcase/11923803" target="_blank" rel="noopener">UGC</a>
+      <a href="https://www.linkedin.com/in/kerby-joe-grubb/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+document.getElementById('copy-email').addEventListener('click', function () {
+  var btn = this, text = document.getElementById('email').textContent;
+  function done(ok) { btn.textContent = ok ? 'Copied' : 'Select and copy'; setTimeout(function () { btn.textContent = 'Copy'; }, 1800); }
+  try {
+    navigator.clipboard.writeText(text).then(function () { done(true); }, function () { selectIt(); done(false); });
+  } catch (e) { selectIt(); done(false); }
+  function selectIt() { var r = document.createRange(); r.selectNodeContents(document.getElementById('email')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+});
+</script>
+
+</body>
+</html>
