@@ -186,6 +186,17 @@ footer nav { display: flex; gap: 18px; flex-wrap: wrap; }
 footer a { text-decoration: none; }
 footer a:hover { color: var(--ink); text-decoration: underline; }
 
+.reels.minis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.minis .reel .frame { aspect-ratio: 16 / 10; padding: 14px 16px; }
+.minis .reel .slug { font-size: 0.8rem; }
+.minis .reel .play { width: 44px; height: 44px; }
+.minis .reel .play svg { width: 16px; height: 16px; margin-left: 3px; }
+.minis .reel .rt { font-size: 0.75rem; }
+.minis .reel .meta { padding: 12px 16px 16px; gap: 4px; }
+.minis .reel .meta h3 { font-size: 1.05rem; }
+.minis .reel .meta p { font-size: 0.88rem; }
+@media (max-width: 960px) { .reels.minis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 420px) { .reels.minis { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 960px) {
   .hero .wrap, .about .wrap, .faq .wrap { grid-template-columns: minmax(0, 1fr); gap: 36px; }
   .sheet, .steps, .proof ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -343,6 +354,61 @@ footer a:hover { color: var(--ink); text-decoration: underline; }
         <div><strong>Need more than one?</strong><span>3 videos, 10% off. 5 videos, 10% off plus an alternate punchline on each.</span></div>
       </div>
       <p class="custom">Longer video, a series or something different? <a href="https://calendly.com/kerbyjoegrubb/30min" target="_blank" rel="noopener">Book a call</a> and I'll quote it after I see your script and filming details.</p>
+    </div>
+  </section>
+
+  <section class="block band" id="more-work" style="border-top: 1px solid var(--line);">
+    <div class="wrap">
+      <div class="head">
+        <p class="script fade">CUT TO:</p>
+        <h2>Still deciding? More from the reel.</h2>
+      </div>
+      <div class="reels minis">
+        <a class="reel" href="https://vimeo.com/1054734679" target="_blank" rel="noopener">
+          <div class="frame">
+            <span class="slug">INT. SMART GUYS - EP. 2</span>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
+            <span class="rt"><span>AI APP</span></span>
+          </div>
+          <div class="meta">
+            <h3>Smart Guys, Ep. 2</h3>
+            <p>Still fact-checking. A comedy series for an AI document tool.</p>
+          </div>
+        </a>
+        <a class="reel" href="https://vimeo.com/1079692851" target="_blank" rel="noopener">
+          <div class="frame">
+            <span class="slug">INT. INFLUENCER'S FEED</span>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
+            <span class="rt"><span>PERSONAL CARE</span></span>
+          </div>
+          <div class="meta">
+            <h3>Teeth Strips</h3>
+            <p>A comic influencer character, written, shot and edited by KJG.</p>
+          </div>
+        </a>
+        <a class="reel" href="https://vimeo.com/1045428641" target="_blank" rel="noopener">
+          <div class="frame">
+            <span class="slug">INT. DUNGEON - GAME NIGHT</span>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
+            <span class="rt"><span>GAMING</span></span>
+          </div>
+          <div class="meta">
+            <h3>D&amp;D</h3>
+            <p>A comedy ad for music made for D&amp;D games.</p>
+          </div>
+        </a>
+        <a class="reel" href="https://vimeo.com/1068480229" target="_blank" rel="noopener">
+          <div class="frame">
+            <span class="slug">INT. SPREADSHEET - CONTINUOUS</span>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
+            <span class="rt"><span>SAAS</span></span>
+          </div>
+          <div class="meta">
+            <h3>Refresh Button</h3>
+            <p>Spreadsheet software, played for laughs.</p>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
 
