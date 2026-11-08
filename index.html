@@ -201,6 +201,11 @@ footer a:hover { color: var(--ink); text-decoration: underline; }
 #player .pbox.wide { aspect-ratio: 16 / 9; height: auto; width: min(90vw, 1100px, calc(84vh * 16 / 9)); }
 #player .pbox iframe { width: 100%; height: 100%; border: 0; display: block; }
 #player .close { position: absolute; top: -48px; right: 0; width: 40px; height: 40px; border-radius: 50%; border: 0; background: var(--hl); color: var(--hl-ink); font-size: 1.5rem; line-height: 1; cursor: pointer; }
+.reel .thumb { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: center 25%; transition: transform .4s ease; }
+.reel:hover .thumb { transform: scale(1.04); }
+.reel .frame { overflow: hidden; }
+.reel .frame::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,14,30,0.78), rgba(10,14,30,0) 32%, rgba(10,14,30,0) 62%, rgba(10,14,30,0.82)); pointer-events: none; }
+.reel .frame > span { position: relative; z-index: 1; }
 @media (max-width: 960px) { .reels.minis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 420px) { .reels.minis { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 960px) {
@@ -280,6 +285,7 @@ footer a:hover { color: var(--ink); text-decoration: underline; }
       <div class="reels">
         <a class="reel" href="https://vimeo.com/1241023575" target="_blank" rel="noopener">
           <div class="frame">
+            <img class="thumb" src="https://i.vimeocdn.com/video/2222367680-baa5539c01fec24c0479364dcceb4ff178fa28c4687aa9c63ca27ecc4b3c7817-d_640" alt="" loading="lazy">
             <span class="slug">INT. RESTAURANT WALK-IN COOLER</span>
             <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
             <span class="rt"><span>B2B SOFTWARE</span><span>RT 0:46</span></span>
@@ -291,6 +297,7 @@ footer a:hover { color: var(--ink); text-decoration: underline; }
         </a>
         <a class="reel" data-wide href="https://vimeo.com/937505868" target="_blank" rel="noopener">
           <div class="frame">
+            <img class="thumb" src="https://i.vimeocdn.com/video/1838159114-bb4d75307727c1157f8dfa2a7f0245107670fd39b9c2816133b271bb523ae61c-d_640" alt="" loading="lazy">
             <span class="slug">INT. THERAPIST'S OFFICE</span>
             <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
             <span class="rt"><span>PHYSICAL PRODUCT</span><span>RT 0:56</span></span>
@@ -302,6 +309,7 @@ footer a:hover { color: var(--ink); text-decoration: underline; }
         </a>
         <a class="reel" href="https://vimeo.com/1099579840" target="_blank" rel="noopener">
           <div class="frame">
+            <img class="thumb" src="https://i.vimeocdn.com/video/2208299406-9be6e2f23672db9cca1dc111c76f69a6d8b98f603544012b0164a63369ddaeac-d_640" alt="" loading="lazy">
             <span class="slug">INT. CYBERSTORE - VIBRATING</span>
             <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
             <span class="rt"><span>ONLINE STORE</span><span>RT 0:42</span></span>
@@ -372,6 +380,7 @@ footer a:hover { color: var(--ink); text-decoration: underline; }
       <div class="reels minis">
         <a class="reel" href="https://vimeo.com/1054734679" target="_blank" rel="noopener">
           <div class="frame">
+            <img class="thumb" src="https://i.vimeocdn.com/video/1980158750-343f3cc2be032f5f59565e9252995fa813efcd19dc666176caa5e766bbaa69d8-d_640" alt="" loading="lazy">
             <span class="slug">INT. SMART GUYS - EP. 2</span>
             <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
             <span class="rt"><span>AI APP</span></span>
@@ -383,6 +392,7 @@ footer a:hover { color: var(--ink); text-decoration: underline; }
         </a>
         <a class="reel" href="https://vimeo.com/1079692851" target="_blank" rel="noopener">
           <div class="frame">
+            <img class="thumb" src="https://i.vimeocdn.com/video/2010134415-3fb08d56a30f5ae4092f1f0f477812dcc31a65fc2bb909d13a9848fb824ffc9a-d_640" alt="" loading="lazy">
             <span class="slug">INT. INFLUENCER'S FEED</span>
             <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
             <span class="rt"><span>PERSONAL CARE</span></span>
@@ -394,6 +404,7 @@ footer a:hover { color: var(--ink); text-decoration: underline; }
         </a>
         <a class="reel" href="https://vimeo.com/1045428641" target="_blank" rel="noopener">
           <div class="frame">
+            <img class="thumb" src="https://i.vimeocdn.com/video/1969191693-23c6e681412bad0a3a62df03f296dab4257ca188aa15ba2ea1ff91040d8e1075-d_640" alt="" loading="lazy">
             <span class="slug">INT. DUNGEON - GAME NIGHT</span>
             <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
             <span class="rt"><span>GAMING</span></span>
@@ -405,6 +416,7 @@ footer a:hover { color: var(--ink); text-decoration: underline; }
         </a>
         <a class="reel" href="https://vimeo.com/1068480229" target="_blank" rel="noopener">
           <div class="frame">
+            <img class="thumb" src="https://i.vimeocdn.com/video/1996599871-1e834f7c3d1ba7cddfbd34a74d4cffa95bde76eef68cb878c555aa681ecc1b2a-d_640" alt="" loading="lazy">
             <span class="slug">INT. SPREADSHEET - CONTINUOUS</span>
             <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
             <span class="rt"><span>SAAS</span></span>
