@@ -207,6 +207,20 @@ footer a:hover { color: var(--ink); text-decoration: underline; }
 .reel .frame > span { position: relative; z-index: 1; }
 .reel .frame > .play { position: absolute; right: 16px; bottom: 46px; z-index: 2; width: 46px; height: 46px; background: var(--hl); box-shadow: 0 2px 10px rgba(0,0,0,0.35); }
 .reel .frame > .play svg { width: 28px; height: 28px; margin-left: 4px; fill: var(--hl-ink); }
+.menu { margin-top: 30px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.menu summary { cursor: pointer; list-style: none; padding: 18px 36px 18px 0; font-weight: 600; font-size: 1.05rem; position: relative; text-decoration: underline; text-decoration-color: var(--hl); text-decoration-thickness: 3px; text-underline-offset: 5px; width: fit-content; }
+.menu summary::-webkit-details-marker { display: none; }
+.menu summary::after { content: "+"; position: absolute; right: 4px; top: 50%; transform: translateY(-50%); font-family: var(--script); font-size: 1.3rem; color: var(--muted); }
+.menu[open] summary::after { content: "\2013"; }
+.menu-body { padding-bottom: 28px; display: grid; gap: 0; }
+.menu-body h3 { font-size: 1.15rem; margin: 26px 0 6px; }
+.menu-body .row { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+.menu-body .row > div { display: grid; gap: 2px; min-width: 0; }
+.menu-body .row span { color: var(--muted); font-size: 0.93rem; }
+.menu-body .row b { white-space: nowrap; font-weight: 700; }
+.menu-body .note { margin-top: 16px; padding: 14px 16px; border: 1px dashed var(--line); border-radius: 6px; color: var(--muted); font-size: 0.95rem; }
+.menu-body .note strong, .menu-body .fine strong { color: var(--ink); }
+.menu-body .fine { color: var(--muted); font-size: 0.95rem; margin-top: 8px; max-width: 70ch; }
 @media (max-width: 960px) { .reels.minis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 420px) { .reels.minis { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 960px) {
@@ -330,7 +344,7 @@ footer a:hover { color: var(--ink); text-decoration: underline; }
       <div class="head">
         <p class="script fade">THE CALL SHEET</p>
         <h2>Pick your length. I'll make it funny.</h2>
-        <p class="lede">Every video arrives fully edited and ready to post: filming, full edit, captions and organic social use included. We set the delivery date together before I start.</p>
+        <p class="lede">Every video arrives fully edited and ready to post: filming, full edit, captions and organic social use included. Vertical (9:16) or horizontal (16:9), your pick. Want both? +$95. We set the delivery date together before I start.</p>
       </div>
       <div class="sheet">
         <article class="pkg">
@@ -368,6 +382,22 @@ footer a:hover { color: var(--ink); text-decoration: underline; }
         <div><strong>Running it as a paid ad?</strong><span>Paid-ad usage starts at +30% for 3 months.</span></div>
         <div><strong>Need more than one?</strong><span>3 videos, 10% off. 5 videos, 10% off plus an alternate punchline on each.</span></div>
       </div>
+      <details class="menu">
+        <summary>See the full menu</summary>
+        <div class="menu-body">
+          <h3>Rerun Rights</h3>
+          <div class="row"><div><strong>Free Range</strong><span>Organic posting on your own channels</span></div><b>Included</b></div><div class="row"><div><strong>Summer Rerun</strong><span>Paid ads, 3 months</span></div><b>+30%</b></div><div class="row"><div><strong>Syndication</strong><span>Paid ads, 6 months</span></div><b>+50%</b></div><div class="row"><div><strong>Prime Time</strong><span>Paid ads, 12 months</span></div><b>+75%</b></div><div class="row"><div><strong>Forever in Reruns</strong><span>Paid ads, perpetual</span></div><b>+200%</b></div>
+          <h3>The Extras</h3>
+          <div class="row"><div><strong>Written by KJG</strong><span>Concept and script by me: +$100 up to 35s, +$150 up to 50s, +$200 up to 65s</span></div><b>From $100</b></div><div class="row"><div><strong>Different Punchlines, Same Joke</strong><span>An alternate hook or opening line for ad testing</span></div><b>$60 each</b></div><div class="row"><div><strong>The Pitch Meeting</strong><span>Three comedy concepts to choose from</span></div><b>$95</b></div><div class="row"><div><strong>I Play Everyone So You Don't Have to Hire Them</strong><span>Each extra character I play in the same video</span></div><b>$95 each</b></div><div class="row"><div><strong>Now in Widescreen!</strong><span>Delivered in both 9:16 and 16:9</span></div><b>$95</b></div><div class="row"><div><strong>Off-Script Gold</strong><span>Bonus improv and ad-libs, edited into an alternate version</span></div><b>$95</b></div><div class="row"><div><strong>The Shorter Cut</strong><span>A shorter version cut from your video (60s into 30s, 30s into 15s)</span></div><b>$95 each</b></div><div class="row"><div><strong>The Blooper Reel</strong><span>Every raw take, flub and happy accident, on top of your edited video</span></div><b>+100%</b></div><div class="row"><div><strong>Costume Department</strong><span>Sourcing specific wardrobe, props or costumes</span></div><b>Cost + $50</b></div><div class="row"><div><strong>Scene Change</strong><span>Each extra set or location</span></div><b>$75 each</b></div><div class="row"><div><strong>Product Close-Ups</strong><span>A set of B-roll and product shots</span></div><b>$75</b></div><div class="row"><div><strong>Green Screen</strong><span>Filmed on green screen for your own backgrounds</span></div><b>$95</b></div><div class="row"><div><strong>Scene Partner</strong><span>A second adult on-camera actor</span></div><b>Quoted per actor</b></div><div class="row"><div><strong>Notes from the Network</strong><span>Changes beyond the approved script</span></div><b>$125 per round</b></div><div class="row"><div><strong>Panic Mode</strong><span>Rush delivery, depending on how tight the deadline is</span></div><b>+25% or +50%</b></div>
+          <p class="note"><strong>Already in every video:</strong> captions for everyone watching on mute at work, rimshots, record scratches and royalty-free music, text overlays, and your end card and call to action. Included. You're welcome.</p>
+          <h3>Book the Whole Tour</h3>
+          <div class="row"><div><strong>Open Mic</strong><span>3 videos: 10% off, plus a free alternate punchline</span></div><b>10% off</b></div><div class="row"><div><strong>The Headliner</strong><span>5 videos: 10% off, plus a free alternate punchline on every video</span></div><b>10% off</b></div><div class="row"><div><strong>The Comedy Special</strong><span>8+ videos a month: custom monthly rate, and no Panic Mode fees, ever</span></div><b>Custom</b></div>
+          <h3>The Fine Print (But Funny)</h3>
+          <p class="fine"><strong>The Bit Bombed.</strong> If you cancel after the script is approved, 50% of the fee is due. After filming, 100%.</p>
+          <p class="fine"><strong>I'm Real and Staying That Way.</strong> My likeness and voice are not licensed for AI training, cloning or synthetic content of any kind.</p>
+          <p class="fine"><strong>The Micromanagement Menu.</strong> Comedy video: $295. If you want to watch me film it: $1,295. If you want to punch up my jokes: $9,995. (Kidding. Mostly.)</p>
+        </div>
+      </details>
       <p class="custom">Longer video, a series or something different? <a href="https://calendly.com/kerbyjoegrubb/30min" target="_blank" rel="noopener">Book a call</a> and I'll quote it after I see your script and filming details.</p>
     </div>
   </section>
@@ -479,6 +509,7 @@ footer a:hover { color: var(--ink); text-decoration: underline; }
         <details><summary>Do I need a script?</summary><p>No. Send yours, or add Written by KJG and I'll write it. Not sure where to start? The Pitch Meeting gets you three concepts for $95.</p></details>
         <details><summary>Can I run it as a paid ad?</summary><p>Yes. Every video includes organic social use. Paid-ad usage is an add-on, starting at +30% for 3 months.</p></details>
         <details><summary>How long does delivery take?</summary><p>It depends on the script and the shoot. You get a firm delivery date before any work starts. Have a deadline? Tell me on the call and I'll say honestly whether I can hit it.</p></details>
+        <details><summary>Can I get just the raw footage?</summary><p>Yes. <a href="https://calendly.com/kerbyjoegrubb/30min" target="_blank" rel="noopener">Book a call</a> and I'll quote it.</p></details>
         <details><summary>Do you post the videos?</summary><p>No. I play a character, your customer, your expert or your CEO, and you post the video on your own channels.</p></details>
         <details><summary>Can my likeness or voice be used with AI?</summary><p>No. My contract rules out using my likeness or voice to train or generate AI content, and keeps my real name off your ads. Trust me, you want it that way.</p></details>
         <details><summary>Can kids appear in the video?</summary><p>I'm happy to play a parent, and a kid. No real children on camera.</p></details>
