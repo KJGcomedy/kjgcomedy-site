@@ -295,7 +295,7 @@ footer a:hover { color: var(--ink); text-decoration: underline; }
           </div>
         </a>
       </div>
-      <p class="more"><span class="direction">(beat)</span> <a href="https://vimeo.com/showcase/11364165" target="_blank" rel="noopener">See all 55 comedy videos</a> <a href="https://vimeo.com/showcase/12438763" target="_blank" rel="noopener">Comedy ads for brands</a> <a href="https://vimeo.com/showcase/12438764" target="_blank" rel="noopener">Original comedy and characters</a></p>
+      <p class="more"><span class="direction">(beat)</span> <a href="https://vimeo.com/showcase/11364165" target="_blank" rel="noopener">See the full comedy portfolio</a> <a href="https://vimeo.com/showcase/12438763" target="_blank" rel="noopener">Comedy ads for brands</a> <a href="https://vimeo.com/showcase/12438764" target="_blank" rel="noopener">Original comedy and characters</a></p>
     </div>
   </section>
 
@@ -413,7 +413,7 @@ footer a:hover { color: var(--ink); text-decoration: underline; }
         <a class="btn btn-line" href="https://calendly.com/kerbyjoegrubb/30min" target="_blank" rel="noopener" id="book-call">Book a call</a>
       </div>
       <div class="contact">
-        <span>Email:</span><code id="email">kjgcomedycreator@gmail.com</code>
+        <span>Email:</span><code id="email">hello@kjgcomedy.com</code>
         <button class="copy-btn" type="button" id="copy-email">Copy</button>
       </div>
     </div>
@@ -422,7 +422,7 @@ footer a:hover { color: var(--ink); text-decoration: underline; }
 
 <footer class="band">
   <div class="wrap">
-    <span>&copy; 2026 KJG Comedy &middot; Comedy ads and on-camera spokesperson videos</span>
+    <span>&copy; <span id="yr">2026</span> KJG Comedy &middot; Comedy ads and on-camera spokesperson videos</span>
     <nav aria-label="Portfolio">
       <a href="https://vimeo.com/showcase/11364165" target="_blank" rel="noopener">Comedy</a>
       <a href="https://vimeo.com/showcase/11923829" target="_blank" rel="noopener">Spokesperson</a>
@@ -433,6 +433,7 @@ footer a:hover { color: var(--ink); text-decoration: underline; }
 </footer>
 
 <script>
+document.getElementById('yr').textContent = new Date().getFullYear();
 document.getElementById('copy-email').addEventListener('click', function () {
   var btn = this, text = document.getElementById('email').textContent;
   function done(ok) { btn.textContent = ok ? 'Copied' : 'Select and copy'; setTimeout(function () { btn.textContent = 'Copy'; }, 1800); }
