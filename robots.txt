@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://kjgcomedy.com/sitemap.xml
+Sitemap: https://kjgcomedy.com/video-sitemap.xml
