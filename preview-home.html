@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Funny Video Ads &amp; Comedy Commercials for Brands | KJG Comedy</title>
+<meta name="description" content="Comedy video ads written and performed by a Groundlings-trained actor who plays your customer, your expert and your CEO. Fully edited, ready to post. From $295.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Courier+Prime:wght@400;700&display=swap">
+<style>
+/* Layout: an actor's marked-up script. White page, navy ink, one highlighter-yellow swipe; screenplay type for runtimes and stage directions. */
+:root {
+  --paper: #fbfcfe;
+  --panel: #eef2f8;
+  --ink: #14213d;
+  --muted: #59627a;
+  --line: #d9dfea;
+  --hl: #ffe24d;
+  --hl-ink: #14213d;
+  --screen: #14213d;
+  --screen-ink: #f3f5fa;
+  --display: "Bricolage Grotesque", "Arial Black", system-ui, sans-serif;
+  --body: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --script: "Courier Prime", "Courier New", Courier, monospace;
+  --wrap: 1120px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0e1528; --panel: #162039; --ink: #f1f4fa; --muted: #a4aec4; --line: #26314d;
+    --hl: #f6d63a; --hl-ink: #14213d; --screen: #1b2747; --screen-ink: #f1f4fa; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0e1528; --panel: #162039; --ink: #f1f4fa; --muted: #a4aec4; --line: #26314d;
+  --hl: #f6d63a; --hl-ink: #14213d; --screen: #1b2747; --screen-ink: #f1f4fa; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper); color: var(--ink);
+  font: 400 1.0625rem/1.6 var(--body);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--hl); outline-offset: 3px; border-radius: 4px; }
+
+.band { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.wrap { max-width: var(--wrap); margin: 0 auto; }
+
+h1, h2, h3 { font-family: var(--display); font-weight: 800; letter-spacing: -0.02em; line-height: 1.04; text-wrap: balance; margin: 0; }
+h2 { font-size: clamp(2rem, 4.4vw, 3.1rem); }
+h3 { font-size: 1.35rem; font-weight: 600; letter-spacing: -0.01em; }
+p { margin: 0; }
+.script { font-family: var(--script); font-size: 0.9rem; letter-spacing: 0.02em; }
+.direction { font-family: var(--script); color: var(--muted); font-size: 0.95rem; }
+.lede { color: var(--muted); max-width: 60ch; }
+
+/* highlighter swipe */
+.hl {
+  background-image: linear-gradient(transparent 12%, var(--hl) 12%, var(--hl) 88%, transparent 88%);
+  background-repeat: no-repeat; background-size: 100% 100%;
+  color: var(--hl-ink); padding: 0 0.12em; margin: 0 -0.06em;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  animation: swipe 0.8s cubic-bezier(.6,.05,.3,1) 0.25s both;
+}
+@keyframes swipe { from { background-size: 0% 100%; } to { background-size: 100% 100%; } }
+@media (prefers-reduced-motion: reduce) { .hl { animation: none; } }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5em;
+  font: 600 1rem/1 var(--body); text-decoration: none;
+  padding: 0.95em 1.4em; border-radius: 999px; border: 2px solid var(--ink);
+  transition: transform .15s ease, background-color .15s ease, color .15s ease;
+}
+.btn-solid { background: var(--ink); color: var(--paper); }
+.btn-solid:hover { transform: translateY(-2px); }
+.btn-line { background: transparent; color: var(--ink); }
+.btn-line:hover { background: var(--hl); color: var(--hl-ink); border-color: var(--hl); }
+
+/* header */
+.top { padding-block: 22px; }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.mark { font-family: var(--display); font-weight: 800; font-size: 1.35rem; letter-spacing: -0.02em; text-decoration: none; }
+.mark span { font-family: var(--script); font-weight: 400; font-size: 0.85rem; color: var(--muted); margin-left: 0.5em; letter-spacing: 0.04em; }
+.nav { display: flex; gap: 22px; align-items: center; flex-wrap: wrap; }
+.nav a { text-decoration: none; font-weight: 500; font-size: 0.95rem; }
+.nav a:hover { text-decoration: underline; text-decoration-color: var(--hl); text-decoration-thickness: 3px; text-underline-offset: 5px; }
+
+/* hero */
+.hero { padding-block: 40px 72px; }
+.hero .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 56px; align-items: center; }
+.hero h1 { font-size: clamp(2.8rem, 6.6vw, 5.2rem); margin-top: 14px; }
+.hero .lede { margin-top: 22px; font-size: 1.15rem; }
+.hero .ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+.fade { color: var(--muted); }
+.still { margin: 0; }
+.still img { display: block; width: 100%; height: auto; border-radius: 6px; }
+.still figcaption { margin-top: 10px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+/* proof */
+.proof { border-block: 1px solid var(--line); padding-block: 26px; }
+.proof ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.proof strong { display: block; font-family: var(--display); font-weight: 800; font-size: 1.9rem; letter-spacing: -0.02em; line-height: 1.1; }
+.proof span { color: var(--muted); font-size: 0.95rem; }
+
+section.block { padding-block: 88px; }
+.head { display: grid; gap: 14px; margin-bottom: 40px; align-content: start; }
+
+/* work */
+.reels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.reel { background: var(--screen); color: var(--screen-ink); border-radius: 6px; overflow: hidden; display: flex; flex-direction: column; text-decoration: none; transition: transform .2s ease; }
+.reel:hover { transform: translateY(-4px); }
+.reel .frame { aspect-ratio: 1 / 1; max-width: 100%; padding: 22px; display: flex; flex-direction: column; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.12); position: relative; }
+.reel .slug { font-family: var(--script); font-weight: 700; font-size: 0.95rem; letter-spacing: 0.03em; }
+.reel .play { width: 64px; height: 64px; border-radius: 50%; background: var(--hl); display: grid; place-items: center; align-self: center; transition: transform .2s ease; }
+.reel:hover .play { transform: scale(1.08); }
+.reel .play svg { width: 22px; height: 22px; margin-left: 4px; fill: var(--hl-ink); }
+.reel .rt { font-family: var(--script); font-size: 0.85rem; opacity: 0.8; display: flex; justify-content: space-between; }
+.reel .meta { padding: 18px 22px 22px; display: grid; gap: 6px; }
+.reel .meta h3 { color: var(--screen-ink); }
+.reel .meta p { color: var(--screen-ink); opacity: 0.78; font-size: 0.97rem; }
+.more { margin-top: 28px; display: flex; gap: 12px 22px; align-items: baseline; flex-wrap: wrap; }
+.more a { font-weight: 600; text-decoration-color: var(--hl); text-decoration-thickness: 3px; text-underline-offset: 5px; }
+
+/* packages */
+.packages { background: var(--panel); }
+.sheet { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.pkg { background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 26px 22px 22px; display: flex; flex-direction: column; gap: 14px; }
+.pkg .rt { font-family: var(--script); font-size: 0.85rem; color: var(--muted); display: flex; justify-content: space-between; }
+.pkg .price { font-family: var(--display); font-weight: 800; font-size: 2.6rem; letter-spacing: -0.03em; line-height: 1; font-variant-numeric: tabular-nums; }
+.pkg .price small { display: block; font-family: var(--body); font-weight: 500; font-size: 0.85rem; letter-spacing: 0; color: var(--muted); margin-top: 8px; }
+.pkg p { color: var(--muted); font-size: 0.97rem; flex: 1; }
+.pkg .btn { width: 100%; }
+.pkg.pick { border: 2px solid var(--ink); }
+.pkg .tag { font-family: var(--script); font-size: 0.8rem; background: var(--hl); color: var(--hl-ink); padding: 2px 8px; border-radius: 3px; }
+.extras { margin-top: 36px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 40px; }
+.extras div { display: grid; gap: 4px; padding-top: 14px; border-top: 1px solid var(--line); }
+.extras strong { font-weight: 600; }
+.extras span { color: var(--muted); font-size: 0.97rem; }
+.custom { margin-top: 30px; color: var(--muted); }
+.custom a { color: var(--ink); font-weight: 600; text-decoration-color: var(--hl); text-decoration-thickness: 3px; text-underline-offset: 5px; }
+
+/* about */
+.about .wrap { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 56px; align-items: start; }
+.about .copy { display: grid; gap: 18px; max-width: 62ch; }
+.credits { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 10px; }
+.credits li { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px dashed var(--line); padding-bottom: 10px; }
+.credits li span:last-child { font-family: var(--script); color: var(--muted); font-size: 0.9rem; text-align: right; }
+.straight { margin-top: 8px; padding: 18px 20px; border-left: 4px solid var(--hl); background: var(--panel); border-radius: 0 6px 6px 0; }
+.straight a { font-weight: 600; }
+
+/* steps */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; counter-reset: s; }
+.steps li { counter-increment: s; display: grid; gap: 8px; align-content: start; }
+.steps li::before { content: "SCENE " counter(s); font-family: var(--script); font-weight: 700; font-size: 0.85rem; color: var(--muted); letter-spacing: 0.04em; }
+.steps p { color: var(--muted); font-size: 0.97rem; }
+
+/* faq */
+.faq .wrap { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 56px; align-items: start; }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq details:first-of-type { border-top: 1px solid var(--line); }
+.faq summary { cursor: pointer; list-style: none; padding: 18px 36px 18px 0; font-weight: 600; font-size: 1.05rem; position: relative; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: 4px; top: 50%; transform: translateY(-50%); font-family: var(--script); font-size: 1.3rem; color: var(--muted); }
+.faq details[open] summary::after { content: "\2013"; }
+.faq details p { color: var(--muted); padding-bottom: 18px; max-width: 62ch; }
+
+/* closer */
+.closer { background: var(--screen); color: var(--screen-ink); }
+.closer .wrap { display: grid; gap: 22px; justify-items: start; }
+.closer h2 { color: var(--screen-ink); }
+.closer p { opacity: 0.8; max-width: 52ch; }
+.closer .btn-solid { background: var(--hl); color: var(--hl-ink); border-color: var(--hl); }
+.closer .btn-line { color: var(--screen-ink); border-color: var(--screen-ink); }
+.closer .btn-line:hover { color: var(--hl-ink); }
+.closer .ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+.contact { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; font-family: var(--script); }
+.contact code { font-family: var(--script); user-select: all; }
+.copy-btn { font: 600 0.85rem var(--body); background: transparent; color: var(--screen-ink); border: 1px solid currentColor; border-radius: 999px; padding: 0.4em 0.9em; cursor: pointer; }
+
+footer { padding-block: 34px; border-top: 1px solid var(--line); }
+footer .wrap { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; color: var(--muted); font-size: 0.93rem; }
+footer nav { display: flex; gap: 18px; flex-wrap: wrap; }
+footer a { text-decoration: none; }
+footer a:hover { color: var(--ink); text-decoration: underline; }
+
+.reels.minis { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; }
+.minis .reel .frame { aspect-ratio: 1 / 1; padding: 14px 16px; }
+.minis .reel .frame > .play { right: 14px; bottom: 38px; }
+.minis .reel .slug { font-size: 0.72rem; }
+.minis .reel .rt { font-size: 0.75rem; }
+.minis .reel .meta { padding: 12px 16px 16px; gap: 4px; }
+.minis .reel .meta h3 { font-size: 1.05rem; }
+.minis .reel .meta p { font-size: 0.88rem; }
+#player { padding: 0; border: 0; background: transparent; max-width: none; max-height: none; overflow: visible; }
+#player::backdrop { background: rgba(8, 12, 26, 0.88); }
+#player .pbox { aspect-ratio: 9 / 16; height: min(84vh, calc(90vw * 16 / 9)); max-width: 90vw; background: #000; border-radius: 6px; overflow: hidden; }
+#player .pbox.wide { aspect-ratio: 16 / 9; height: auto; width: min(90vw, 1100px, calc(84vh * 16 / 9)); }
+#player .pbox iframe { width: 100%; height: 100%; border: 0; display: block; }
+#player .close { position: absolute; top: -48px; right: 0; width: 40px; height: 40px; border-radius: 50%; border: 0; background: var(--hl); color: var(--hl-ink); font-size: 1.5rem; line-height: 1; cursor: pointer; }
+.reel .thumb { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: center 25%; transition: transform .4s ease; }
+.reel:hover .thumb { transform: scale(1.04); }
+.reel .frame { overflow: hidden; }
+.reel .frame::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,14,30,0.78), rgba(10,14,30,0) 32%, rgba(10,14,30,0) 62%, rgba(10,14,30,0.82)); pointer-events: none; }
+.reel .frame > span { position: relative; z-index: 1; }
+.reel .frame > .play { position: absolute; right: 16px; bottom: 46px; z-index: 2; width: 46px; height: 46px; background: var(--hl); box-shadow: 0 2px 10px rgba(0,0,0,0.35); }
+.reel .frame > .play svg { width: 28px; height: 28px; margin-left: 4px; fill: var(--hl-ink); }
+.menu { margin-top: 30px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.menu summary { cursor: pointer; list-style: none; padding: 18px 36px 18px 0; font-weight: 600; font-size: 1.05rem; position: relative; text-decoration: underline; text-decoration-color: var(--hl); text-decoration-thickness: 3px; text-underline-offset: 5px; width: fit-content; }
+.menu summary::-webkit-details-marker { display: none; }
+.menu summary::after { content: "+"; position: absolute; right: 4px; top: 50%; transform: translateY(-50%); font-family: var(--script); font-size: 1.3rem; color: var(--muted); }
+.menu[open] summary::after { content: "\2013"; }
+.menu-body { padding-bottom: 28px; display: grid; gap: 0; }
+.menu-body h3 { font-size: 1.15rem; margin: 26px 0 6px; }
+.menu-body .row { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+.menu-body .row > div { display: grid; gap: 2px; min-width: 0; }
+.menu-body .row span { color: var(--muted); font-size: 0.93rem; }
+.menu-body .row b { white-space: nowrap; font-weight: 700; }
+.menu-body .note { margin-top: 16px; padding: 14px 16px; border: 1px dashed var(--line); border-radius: 6px; color: var(--muted); font-size: 0.95rem; }
+.menu-body .note strong, .menu-body .fine strong { color: var(--ink); }
+.menu-body .fine { color: var(--muted); font-size: 0.95rem; margin-top: 8px; max-width: 70ch; }
+@media (max-width: 960px) { .reels.minis { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .reels.minis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 420px) { .reels.minis { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 960px) {
+  .hero .wrap, .about .wrap, .faq .wrap { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  .sheet, .steps, .proof ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .reels { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+}
+@media (max-width: 680px) {
+  .reels, .sheet, .extras { grid-template-columns: minmax(0, 1fr); }
+  .reel .frame { aspect-ratio: 1 / 1; }
+  section.block { padding-block: 64px; }
+  .nav a:not(.btn) { display: none; }
+}
+@media (max-width: 420px) {
+  .steps, .proof ul { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* Client reviews, set as screenplay dialogue */
+.quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 40px;margin:0;padding:0;list-style:none}.quotes li{display:grid;gap:6px;align-content:start}.quotes .lead{grid-column:1/-1}.quotes .cue{font-family:var(--script);font-weight:700;font-size:.9rem;letter-spacing:.04em;margin:0}.quotes .paren{font-family:var(--script);color:var(--muted);font-size:.88rem;margin:0}.quotes blockquote{margin:0;font-size:1.08rem;line-height:1.5}.quotes .lead blockquote{font-family:var(--display);font-weight:600;font-size:clamp(1.3rem,2.6vw,1.75rem);line-height:1.3;letter-spacing:-.01em}.quotes .lead mark{background:var(--hl);color:var(--hl-ink);padding:0 .12em;border-radius:2px;-webkit-box-decoration-break:clone;box-decoration-break:clone}@media (max-width:680px){.quotes{grid-template-columns:minmax(0,1fr)}}
+.btn-order{background:var(--hl);color:var(--hl-ink);border:2px solid var(--ink);font-weight:700;font-size:1.1rem;padding:1em 1.55em;box-shadow:0 4px 0 var(--ink)}.btn-order:hover{transform:translateY(-2px);box-shadow:0 6px 0 var(--ink)}.btn-order .arr{transition:transform .15s ease}.btn-order:hover .arr{transform:translateX(4px)}.nav .btn-order{font-size:.95rem;padding:.7em 1.1em;box-shadow:0 3px 0 var(--ink)}.ctas .from{font-family:var(--script);font-size:.9rem;color:var(--muted);align-self:center}.sticky-order{display:none}@media (max-width:680px){.sticky-order{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:50;justify-content:center;align-items:center;gap:.5em;background:var(--hl);color:var(--hl-ink);border:2px solid var(--ink);border-radius:999px;padding:.95em 1.2em;font-weight:700;font-size:1.05rem;text-decoration:none;box-shadow:0 4px 0 var(--ink),0 10px 24px rgba(0,0,0,.25);transform:translateY(160%);transition:transform .25s ease}.sticky-order small{font-family:var(--script);font-weight:400;font-size:.8rem;opacity:.85}.sticky-order.on{transform:none}body{padding-bottom:84px}}@media (prefers-reduced-motion:reduce){.sticky-order{transition:none}}
+</style>
+<meta property="og:title" content="KJG Comedy: Funny Video Ads for Brands, Apps and SaaS">
+<meta property="og:description" content="Comedy video ads written and performed by a Groundlings-trained actor. Packages from $295.">
+<meta property="og:image" content="https://kjgcomedy.com/kjg-comedy-characters.jpg">
+<meta property="og:url" content="https://kjgcomedy.com/">
+<link rel="canonical" href="https://kjgcomedy.com/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-video-preview:-1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KJG Comedy">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Funny Video Ads &amp; Comedy Commercials for Brands | KJG Comedy">
+<meta name="twitter:description" content="Comedy video ads written and performed by a Groundlings-trained actor. Packages from $295.">
+<meta name="twitter:image" content="https://kjgcomedy.com/kjg-comedy-characters.jpg">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://kjgcomedy.com/#website",
+   "url": "https://kjgcomedy.com/",
+   "name": "KJG Comedy",
+   "publisher": {
+    "@id": "https://kjgcomedy.com/#business"
+   }
+  },
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://kjgcomedy.com/#business",
+   "name": "KJG Comedy",
+   "url": "https://kjgcomedy.com/",
+   "logo": "https://kjgcomedy.com/apple-touch-icon.png",
+   "image": "https://kjgcomedy.com/kjg-comedy-characters.jpg",
+   "description": "Comedy video ads, UGC-style ads and on-camera spokesperson videos for apps, SaaS and consumer brands, written and performed by a Groundlings-trained actor.",
+   "email": "hello@kjgcomedy.com",
+   "priceRange": "$295 - $795",
+   "areaServed": "Worldwide",
+   "founder": {
+    "@id": "https://kjgcomedy.com/#kjg"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/in/kerby-joe-grubb/",
+    "https://vimeo.com/showcase/11364165"
+   ],
+   "knowsAbout": [
+    "comedy video ads",
+    "funny commercials",
+    "sketch comedy",
+    "UGC ads",
+    "spokesperson videos",
+    "SaaS video marketing"
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Comedy video ad packages",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "name": "The One-Liner (up to 20s comedy ad)",
+      "price": "295",
+      "priceCurrency": "USD",
+      "url": "https://kjgcomedy.com/#packages"
+     },
+     {
+      "@type": "Offer",
+      "name": "The Bit (up to 35s comedy ad)",
+      "price": "395",
+      "priceCurrency": "USD",
+      "url": "https://kjgcomedy.com/#packages"
+     },
+     {
+      "@type": "Offer",
+      "name": "The Sketch (up to 50s comedy ad)",
+      "price": "495",
+      "priceCurrency": "USD",
+      "url": "https://kjgcomedy.com/#packages"
+     },
+     {
+      "@type": "Offer",
+      "name": "The Full Set (up to 65s comedy ad)",
+      "price": "595",
+      "priceCurrency": "USD",
+      "url": "https://kjgcomedy.com/#packages"
+     },
+     {
+      "@type": "Offer",
+      "name": "The Pitch Meeting (three comedy ad concepts)",
+      "price": "95",
+      "priceCurrency": "USD",
+      "url": "https://kjgcomedy.com/#packages"
+     }
+    ]
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://kjgcomedy.com/#kjg",
+   "name": "Kerby Joe Grubb",
+   "alternateName": "KJG",
+   "jobTitle": "Comedic actor and comedy writer",
+   "url": "https://kjgcomedy.com/",
+   "image": "https://kjgcomedy.com/kjg-comedy-characters.jpg",
+   "alumniOf": {
+    "@type": "Organization",
+    "name": "The Groundlings"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/in/kerby-joe-grubb/"
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://kjgcomedy.com/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Can comedy work for my product?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Almost always. I've made funny ads for restaurant software, personal care products, apps and online stores. If it has a customer with a problem, there's a joke in it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need a script?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Send yours, or add Written by KJG and I'll write it. Not sure where to start? The Pitch Meeting gets you three concepts for $95."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I run it as a paid ad?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Every video includes organic social use. Paid-ad usage is an add-on, starting at +30% for 3 months."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does delivery take?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on the script and the shoot. You get a firm delivery date before any work starts. Have a deadline? Tell me on the call and I'll say honestly whether I can hit it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I get just the raw footage?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Book a call and I'll quote it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you post the videos?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. I play a character, your customer, your expert or your CEO, and you post the video on your own channels."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can my likeness or voice be used with AI?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. My contract rules out using my likeness or voice to train or generate AI content, and keeps my real name off your ads. Trust me, you want it that way."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can kids appear in the video?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "I'm happy to play a parent, and a kid. No real children on camera."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I pay?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "By card at checkout. Larger projects and series are 50% up front, with the balance due before final files."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you make straight, non-comedy videos?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes: UGC-style ads and spokesperson videos. See my Full UGC Portfolio - Full Spokesperson Portfolio, or book a call."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"VideoObject","name":"Better Than a Candle | Comedy Video Ad by KJG Comedy","description":"Last year he gave her a candle. This year, their whole vacation on a blanket. Marriage: saved.","thumbnailUrl":"https://i.vimeocdn.com/video/2227721432-ca492cce236dd60735828f58c6e94f3ad009dd92f6ded2f6a03ce57cd27d62ff-d_640","uploadDate":"2026-11-17T20:45:15+00:00","duration":"PT0M42S","embedUrl":"https://player.vimeo.com/video/1247830431","url":"https://vimeo.com/1247830431","creator":{"@type":"Person","name":"Kerby Joe Grubb","url":"https://kjgcomedy.com/"},"publisher":{"@type":"Organization","name":"KJG Comedy","url":"https://kjgcomedy.com/"}},{"@type":"VideoObject","name":"The Cooler | Comedy Video Ad by KJG Comedy","description":"A talking walk-in cooler shows Tony Baloney how to dry his tears with restaurant pricing software.","thumbnailUrl":"https://i.vimeocdn.com/video/2222367680-baa5539c01fec24c0479364dcceb4ff178fa28c4687aa9c63ca27ecc4b3c7817-d_640","uploadDate":"2026-10-29T18:38:56+00:00","duration":"PT0M46S","embedUrl":"https://player.vimeo.com/video/1241023575","url":"https://vimeo.com/1241023575","creator":{"@type":"Person","name":"Kerby Joe Grubb","url":"https://kjgcomedy.com/"},"publisher":{"@type":"Organization","name":"KJG Comedy","url":"https://kjgcomedy.com/"}},{"@type":"VideoObject","name":"Therapy | Comedy Video Ad by KJG Comedy","description":"Third therapy session, two characters, one specific problem. Solved.","thumbnailUrl":"https://i.vimeocdn.com/video/1838159114-bb4d75307727c1157f8dfa2a7f0245107670fd39b9c2816133b271bb523ae61c-d_640","uploadDate":"2024-04-21T21:39:49+00:00","duration":"PT0M56S","embedUrl":"https://player.vimeo.com/video/937505868","url":"https://vimeo.com/937505868","creator":{"@type":"Person","name":"Kerby Joe Grubb","url":"https://kjgcomedy.com/"},"publisher":{"@type":"Organization","name":"KJG Comedy","url":"https://kjgcomedy.com/"}},{"@type":"VideoObject","name":"LJ Discounts | Comedy Video Ad by KJG Comedy","description":"One vibration plate, zero restraint.","thumbnailUrl":"https://i.vimeocdn.com/video/2208299406-9be6e2f23672db9cca1dc111c76f69a6d8b98f603544012b0164a63369ddaeac-d_640","uploadDate":"2025-07-08T03:54:40+00:00","duration":"PT0M42S","embedUrl":"https://player.vimeo.com/video/1099579840","url":"https://vimeo.com/1099579840","creator":{"@type":"Person","name":"Kerby Joe Grubb","url":"https://kjgcomedy.com/"},"publisher":{"@type":"Organization","name":"KJG Comedy","url":"https://kjgcomedy.com/"}},{"@type":"VideoObject","name":"Smart Guys, Ep. 2 | Comedy Video Ad by KJG Comedy","description":"Still fact-checking. A comedy series for an AI document tool.","thumbnailUrl":"https://i.vimeocdn.com/video/1980158750-343f3cc2be032f5f59565e9252995fa813efcd19dc666176caa5e766bbaa69d8-d_640","uploadDate":"2025-02-08T04:03:10+00:00","duration":"PT1M26S","embedUrl":"https://player.vimeo.com/video/1054734679","url":"https://vimeo.com/1054734679","creator":{"@type":"Person","name":"Kerby Joe Grubb","url":"https://kjgcomedy.com/"},"publisher":{"@type":"Organization","name":"KJG Comedy","url":"https://kjgcomedy.com/"}},{"@type":"VideoObject","name":"Teeth Strips | Comedy Video Ad by KJG Comedy","description":"A comic influencer character, written, shot and edited by KJG.","thumbnailUrl":"https://i.vimeocdn.com/video/2010134415-3fb08d56a30f5ae4092f1f0f477812dcc31a65fc2bb909d13a9848fb824ffc9a-d_640","uploadDate":"2025-04-29T07:29:17+00:00","duration":"PT3M32S","embedUrl":"https://player.vimeo.com/video/1079692851","url":"https://vimeo.com/1079692851","creator":{"@type":"Person","name":"Kerby Joe Grubb","url":"https://kjgcomedy.com/"},"publisher":{"@type":"Organization","name":"KJG Comedy","url":"https://kjgcomedy.com/"}},{"@type":"VideoObject","name":"D&D | Comedy Video Ad by KJG Comedy","description":"A comedy ad for music made for D&D games.","thumbnailUrl":"https://i.vimeocdn.com/video/1969191693-23c6e681412bad0a3a62df03f296dab4257ca188aa15ba2ea1ff91040d8e1075-d_640","uploadDate":"2025-01-09T17:41:27+00:00","duration":"PT0M58S","embedUrl":"https://player.vimeo.com/video/1045428641","url":"https://vimeo.com/1045428641","creator":{"@type":"Person","name":"Kerby Joe Grubb","url":"https://kjgcomedy.com/"},"publisher":{"@type":"Organization","name":"KJG Comedy","url":"https://kjgcomedy.com/"}},{"@type":"VideoObject","name":"Refresh Button | Comedy Video Ad by KJG Comedy","description":"Spreadsheet software, played for laughs.","thumbnailUrl":"https://i.vimeocdn.com/video/1996599871-1e834f7c3d1ba7cddfbd34a74d4cffa95bde76eef68cb878c555aa681ecc1b2a-d_640","uploadDate":"2025-03-22T21:15:20+00:00","duration":"PT0M39S","embedUrl":"https://player.vimeo.com/video/1068480229","url":"https://vimeo.com/1068480229","creator":{"@type":"Person","name":"Kerby Joe Grubb","url":"https://kjgcomedy.com/"},"publisher":{"@type":"Organization","name":"KJG Comedy","url":"https://kjgcomedy.com/"}}]}</script>
+</head>
+<body>
+
+
+<header class="top band">
+  <div class="wrap">
+    <a class="mark" href="#top">KJG Comedy<span>EST. 1998</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#packages">Packages</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-order" href="#packages">Order your ad</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero band">
+    <div class="wrap">
+      <div>
+        <p class="script fade">FADE IN:</p>
+        <h1>Comedy ads people <span class="hl">actually watch.</span></h1>
+        <p class="lede">Written and performed by a Groundlings-trained actor who looks like your customer, or your CEO. Comedy ads and on-camera spokesperson videos for apps, SaaS and consumer brands.</p>
+        <div class="ctas">
+          <a class="btn btn-order" href="#packages">Order your funny ad <span class="arr" aria-hidden="true">&rarr;</span></a>
+          <a class="btn btn-line" href="https://calendly.com/kerbyjoegrubb/30min" target="_blank" rel="noopener">Book a call</a>
+          <span class="from">Ads from $295. Fully edited, captioned, ready to post.</span>
+        </div>
+      </div>
+      <figure class="still">
+        <a href="https://vimeo.com/showcase/11364165" target="_blank" rel="noopener">
+          <img src="kjg-comedy-characters.jpg" width="1600" height="900" alt="KJG playing three comedy characters for brand video ads">
+        </a>
+        <figcaption class="direction"><span>(one actor, every character)</span><span>Same guy. Really.</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="proof band" aria-label="Track record">
+    <div class="wrap">
+      <ul>
+        <li><strong>600+</strong><span>client video projects</span></li>
+        <li><strong>100+</strong><span>comedy ads written and performed</span></li>
+        <li><strong>100%</strong><span>Job Success, Top Rated Plus on Upwork</span></li>
+        <li><strong>Groundlings</strong><span>Advanced Sketch Writing Lab</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block band" id="work">
+    <div class="wrap">
+      <div class="head">
+        <p class="script fade">CUT TO:</p>
+        <h2>Funny sells any product. Even the boring ones.</h2>
+      </div>
+      <div class="reels">
+        <a class="reel" href="https://vimeo.com/1247830431" target="_blank" rel="noopener">
+          <div class="frame">
+            <img class="thumb" src="https://i.vimeocdn.com/video/2227721432-ca492cce236dd60735828f58c6e94f3ad009dd92f6ded2f6a03ce57cd27d62ff-d_640" alt="A husband who once gifted his wife a candle redeems himself with a custom photo blanket in a funny UGC-style ad" loading="lazy">
+            <span class="slug">INT. THE DOGHOUSE - EXITING</span>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
+            <span class="rt"><span>GIFTS / E-COMMERCE</span><span>RT 0:42</span></span>
+          </div>
+          <div class="meta">
+            <h3>Better Than a Candle</h3>
+            <p>Last year he gave her a candle. This year, their whole vacation on a blanket. Marriage: saved.</p>
+          </div>
+        </a>
+        <a class="reel" data-wide href="https://vimeo.com/937505868" target="_blank" rel="noopener">
+          <div class="frame">
+            <img class="thumb" src="https://i.vimeocdn.com/video/1838159114-bb4d75307727c1157f8dfa2a7f0245107670fd39b9c2816133b271bb523ae61c-d_640" alt="Two KJG characters work through one very specific problem in a funny therapy-session ad" loading="lazy">
+            <span class="slug">INT. THERAPIST'S OFFICE</span>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
+            <span class="rt"><span>PHYSICAL PRODUCT</span><span>RT 0:56</span></span>
+          </div>
+          <div class="meta">
+            <h3>Therapy</h3>
+            <p>Third therapy session, two characters, one specific problem. Solved.</p>
+          </div>
+        </a>
+        <a class="reel" href="https://vimeo.com/1099579840" target="_blank" rel="noopener">
+          <div class="frame">
+            <img class="thumb" src="https://i.vimeocdn.com/video/2208299406-9be6e2f23672db9cca1dc111c76f69a6d8b98f603544012b0164a63369ddaeac-d_640" alt="KJG shows zero restraint on a vibration plate in a comedy ad for an online store" loading="lazy">
+            <span class="slug">INT. CYBERSTORE - VIBRATING</span>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
+            <span class="rt"><span>ONLINE STORE</span><span>RT 0:42</span></span>
+          </div>
+          <div class="meta">
+            <h3>LJ Discounts</h3>
+            <p>One vibration plate, zero restraint.</p>
+          </div>
+        </a>
+      </div>
+      <p class="more"><span class="direction">(beat)</span> <a href="https://vimeo.com/showcase/11364165" target="_blank" rel="noopener">See My Full Comedy Portfolio</a></p>
+    </div>
+  </section>
+
+  <section class="block band" id="reviews" aria-label="Client reviews"><div class="wrap"><div class="head"><p class="script fade">INT. CLIENT REVIEWS - DAY</p><h2>Don't take my word for it. I'm biased.</h2></div><ul class="quotes"><li class="lead"><p class="cue">BRETT JAKESON</p><p class="paren">(Upwork client, re: a funny talking-head ad)</p><blockquote>“Kerby was incredible! He took my idea and script and completely 10x’d it. <mark>I asked for a funny video and ended up laughing out loud watching it by myself.</mark>”</blockquote></li><li><p class="cue">THOMAS BRIER</p><p class="paren">(Upwork client, re: a comedy consultation)</p><blockquote>“He helped take my monotone speech to the next level with his background and expertise as a comedy writer… Truly a comedic genius.”</blockquote></li><li><p class="cue">HAYDENMANWARING</p><p class="paren">(Fiverr client, US, re: a comedy video ad)</p><blockquote>“Kerby Joe is a true PRO in video ads! His creativity and storytelling went above and beyond, taking my comedic ad to the next level—WAY beyond my expectations.”</blockquote></li><li><p class="cue">KARLAMZ</p><p class="paren">(Fiverr client, Estonia)</p><blockquote>“man, i haven't seen something like this ever ordering from fiverr...im not sure how you're not fully booked already, crazy!!! you were hilarious and it was really funny, honestly, you exceeded all my expectations”</blockquote></li><li><p class="cue">LJ DISCOUNTS</p><p class="paren">(Fiverr client, US, re: their vibration-plate ad)</p><blockquote>“Kerby Joe EXCELS in video ads &amp; commercials with exceptional creativity and professionalism!”</blockquote></li></ul></div></section>
+
+  <section class="block band packages" id="packages">
+    <div class="wrap">
+      <div class="head">
+        <p class="script fade">THE CALL SHEET</p>
+        <h2>Pick your length. I'll make it funny.</h2>
+        <p class="lede">Every video arrives fully edited and ready to post: filming, full edit, captions and organic social use included. Vertical (9:16) or horizontal (16:9), your pick. Want both? +$95. We set the delivery date together before I start.</p>
+      </div>
+      <div class="sheet">
+        <article class="pkg">
+          <div class="rt"><span>RT 0:20</span><span>UP TO 20s</span></div>
+          <h3>The One-Liner</h3>
+          <div class="price">$295<small>$395 if I write it</small></div>
+          <p>One joke, one product, zero wasted seconds. Built for the scroll.</p>
+          <a class="btn btn-line" href="https://buy.stripe.com/aFa9AV8VY6V3a0N2oy6Vq01" target="_blank" rel="noopener">Order The One-Liner</a>
+        </article>
+        <article class="pkg pick">
+          <div class="rt"><span>RT 0:35</span><span class="tag">SWEET SPOT</span></div>
+          <h3>The Bit</h3>
+          <div class="price">$395<small>$495 if I write it</small></div>
+          <p>A setup, a turn and a payoff. The sweet spot for paid social.</p>
+          <a class="btn btn-solid" href="https://buy.stripe.com/8x25kFb464MV0qdbZ86Vq02" target="_blank" rel="noopener">Order The Bit</a>
+        </article>
+        <article class="pkg">
+          <div class="rt"><span>RT 0:50</span><span>UP TO 50s</span></div>
+          <h3>The Sketch</h3>
+          <div class="price">$495<small>$645 if I write it</small></div>
+          <p>A full comic scene with room for characters and a real story.</p>
+          <a class="btn btn-line" href="https://buy.stripe.com/00wdRb2xA1AJb4R8MW6Vq03" target="_blank" rel="noopener">Order The Sketch</a>
+        </article>
+        <article class="pkg">
+          <div class="rt"><span>RT 1:05</span><span>UP TO 65s</span></div>
+          <h3>The Full Set</h3>
+          <div class="price">$595<small>$795 if I write it</small></div>
+          <p>The big swing: multiple beats, multiple laughs, one product hero.</p>
+          <a class="btn btn-line" href="https://buy.stripe.com/aFa8wRfkmfrzgpbgfo6Vq04" target="_blank" rel="noopener">Order The Full Set</a>
+        </article>
+      </div>
+      <div class="extras">
+        <div><strong>Want me to write it?</strong><span>Written by KJG: concept and script, +$100 up to 35s, +$150 up to 50s, +$200 up to 65s.</span></div>
+        <div><strong>Not sure what's funny about your product?</strong><span>The Pitch Meeting, $95: three comedy concepts to choose from.</span></div>
+        <div><strong>Running it as a paid ad?</strong><span>Paid-ad usage starts at +30% for 3 months.</span></div>
+        <div><strong>Need more than one?</strong><span>3 videos, 10% off. 5 videos, 10% off plus an alternate punchline on each.</span></div>
+      </div>
+      <details class="menu">
+        <summary>See the full menu</summary>
+        <div class="menu-body">
+          <h3>Rerun Rights</h3>
+          <div class="row"><div><strong>Free Range</strong><span>Organic posting on your own channels</span></div><b>Included</b></div><div class="row"><div><strong>Summer Rerun</strong><span>Paid ads, 3 months</span></div><b>+30%</b></div><div class="row"><div><strong>Syndication</strong><span>Paid ads, 6 months</span></div><b>+50%</b></div><div class="row"><div><strong>Prime Time</strong><span>Paid ads, 12 months</span></div><b>+75%</b></div><div class="row"><div><strong>Forever in Reruns</strong><span>Paid ads, perpetual</span></div><b>+200%</b></div>
+          <h3>The Extras</h3>
+          <div class="row"><div><strong>Written by KJG</strong><span>Concept and script by me: +$100 up to 35s, +$150 up to 50s, +$200 up to 65s</span></div><b>From $100</b></div><div class="row"><div><strong>Different Punchlines, Same Joke</strong><span>An alternate hook or opening line for ad testing</span></div><b>$60 each</b></div><div class="row"><div><strong>The Pitch Meeting</strong><span>Three comedy concepts to choose from</span></div><b>$95</b></div><div class="row"><div><strong>I Play Everyone So You Don't Have to Hire Them</strong><span>Each extra character I play in the same video</span></div><b>$95 each</b></div><div class="row"><div><strong>Now in Widescreen!</strong><span>Delivered in both 9:16 and 16:9</span></div><b>$95</b></div><div class="row"><div><strong>Off-Script Gold</strong><span>Bonus improv and ad-libs, edited into an alternate version</span></div><b>$95</b></div><div class="row"><div><strong>The Shorter Cut</strong><span>A shorter version cut from your video (60s into 30s, 30s into 15s)</span></div><b>$95 each</b></div><div class="row"><div><strong>The Blooper Reel</strong><span>Every raw take, flub and happy accident, on top of your edited video</span></div><b>+100%</b></div><div class="row"><div><strong>Costume Department</strong><span>Sourcing specific wardrobe, props or costumes</span></div><b>Cost + $50</b></div><div class="row"><div><strong>Scene Change</strong><span>Each extra set or location</span></div><b>$75 each</b></div><div class="row"><div><strong>Product Close-Ups</strong><span>A set of B-roll and product shots</span></div><b>$75</b></div><div class="row"><div><strong>Green Screen</strong><span>Filmed on green screen for your own backgrounds</span></div><b>$95</b></div><div class="row"><div><strong>Scene Partner</strong><span>A second adult on-camera actor</span></div><b>Quoted per actor</b></div><div class="row"><div><strong>Notes from the Network</strong><span>Changes beyond the approved script</span></div><b>$125 per round</b></div><div class="row"><div><strong>Panic Mode</strong><span>Rush delivery, depending on how tight the deadline is</span></div><b>+25% or +50%</b></div>
+          <p class="note"><strong>Already in every video:</strong> captions for everyone watching on mute at work, rimshots, record scratches and royalty-free music, text overlays, and your end card and call to action. Included. You're welcome.</p>
+          <h3>Book the Whole Tour</h3>
+          <div class="row"><div><strong>Open Mic</strong><span>3 videos: 10% off, plus a free alternate punchline</span></div><b>10% off</b></div><div class="row"><div><strong>The Headliner</strong><span>5 videos: 10% off, plus a free alternate punchline on every video</span></div><b>10% off</b></div><div class="row"><div><strong>The Comedy Special</strong><span>8+ videos a month: custom monthly rate, and no Panic Mode fees, ever</span></div><b>Custom</b></div>
+          <h3>The Fine Print (But Funny)</h3>
+          <p class="fine"><strong>The Bit Bombed.</strong> If you cancel after the script is approved, 50% of the fee is due. After filming, 100%.</p>
+          <p class="fine"><strong>I'm Real and Staying That Way.</strong> My likeness and voice are not licensed for AI training, cloning or synthetic content of any kind.</p>
+          <p class="fine"><strong>The Micromanagement Menu.</strong> Comedy video: $295. If you want to watch me film it: $1,295. If you want to punch up my jokes: $9,995. (Kidding. Mostly.)</p>
+        </div>
+      </details>
+      <p class="custom">Longer video, a series or something different? <a href="https://calendly.com/kerbyjoegrubb/30min" target="_blank" rel="noopener">Book a call</a> and I'll quote it after I see your script and filming details.</p>
+    </div>
+  </section>
+
+  <section class="block band" id="more-work" style="border-top: 1px solid var(--line);">
+    <div class="wrap">
+      <div class="head">
+        <p class="script fade">CUT TO:</p>
+        <h2>Still deciding? More from the reel.</h2>
+      </div>
+      <div class="reels minis">
+        <a class="reel" href="https://vimeo.com/1241023575" target="_blank" rel="noopener">
+          <div class="frame">
+            <img class="thumb" src="https://i.vimeocdn.com/video/2222367680-baa5539c01fec24c0479364dcceb4ff178fa28c4687aa9c63ca27ecc4b3c7817-d_640" alt="A talking walk-in cooler consoles a heartbroken chef in a comedy ad for restaurant pricing software" loading="lazy">
+            <span class="slug">INT. WALK-IN COOLER</span>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
+            <span class="rt"><span>B2B SOFTWARE</span></span>
+          </div>
+          <div class="meta">
+            <h3>The Cooler</h3>
+            <p>A talking walk-in cooler shows Tony Baloney how to dry his tears with restaurant pricing software.</p>
+          </div>
+        </a>
+        <a class="reel" href="https://vimeo.com/1054734679" target="_blank" rel="noopener">
+          <div class="frame">
+            <img class="thumb" src="https://i.vimeocdn.com/video/1980158750-343f3cc2be032f5f59565e9252995fa813efcd19dc666176caa5e766bbaa69d8-d_640" alt="Two know-it-alls still fact-checking in a comedy series for an AI document app" loading="lazy">
+            <span class="slug">INT. SMART GUYS - EP. 2</span>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
+            <span class="rt"><span>AI APP</span></span>
+          </div>
+          <div class="meta">
+            <h3>Smart Guys, Ep. 2</h3>
+            <p>Still fact-checking. A comedy series for an AI document tool.</p>
+          </div>
+        </a>
+        <a class="reel" href="https://vimeo.com/1079692851" target="_blank" rel="noopener">
+          <div class="frame">
+            <img class="thumb" src="https://i.vimeocdn.com/video/2010134415-3fb08d56a30f5ae4092f1f0f477812dcc31a65fc2bb909d13a9848fb824ffc9a-d_640" alt="KJG as a dazzlingly over-the-top influencer in a funny teeth whitening strips ad" loading="lazy">
+            <span class="slug">INT. INFLUENCER'S FEED</span>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
+            <span class="rt"><span>PERSONAL CARE</span></span>
+          </div>
+          <div class="meta">
+            <h3>Teeth Strips</h3>
+            <p>A comic influencer character, written, shot and edited by KJG.</p>
+          </div>
+        </a>
+        <a class="reel" href="https://vimeo.com/1045428641" target="_blank" rel="noopener">
+          <div class="frame">
+            <img class="thumb" src="https://i.vimeocdn.com/video/1969191693-23c6e681412bad0a3a62df03f296dab4257ca188aa15ba2ea1ff91040d8e1075-d_640" alt="Game night turns epic in a comedy ad for music made for D&amp;D" loading="lazy">
+            <span class="slug">INT. DUNGEON - NIGHT</span>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
+            <span class="rt"><span>GAMING</span></span>
+          </div>
+          <div class="meta">
+            <h3>D&amp;D</h3>
+            <p>A comedy ad for music made for D&amp;D games.</p>
+          </div>
+        </a>
+        <a class="reel" href="https://vimeo.com/1068480229" target="_blank" rel="noopener">
+          <div class="frame">
+            <img class="thumb" src="https://i.vimeocdn.com/video/1996599871-1e834f7c3d1ba7cddfbd34a74d4cffa95bde76eef68cb878c555aa681ecc1b2a-d_640" alt="One man versus the refresh button in a comedy ad for spreadsheet software" loading="lazy">
+            <span class="slug">INT. SPREADSHEET - AGAIN</span>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
+            <span class="rt"><span>SAAS</span></span>
+          </div>
+          <div class="meta">
+            <h3>Refresh Button</h3>
+            <p>Spreadsheet software, played for laughs.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block band about" id="about">
+    <div class="wrap">
+      <div class="head">
+        <p class="script fade">ENTER KJG</p>
+        <h2>Hi, I'm KJG.</h2>
+        <ul class="credits" aria-label="Selected credits">
+          <li><span>Angie Tribeca</span><span>TBS, dir. Steve Carell</span></li>
+          <li><span>Real Rob</span><span>Netflix, dir. Rob Schneider</span></li>
+          <li><span>Danger Force</span><span>Nickelodeon</span></li>
+          <li><span>Crime Boss: Rockay City</span><span>Lead writer, AAA game</span></li>
+          <li><span>The Groundlings</span><span>Adv. Sketch Writing Lab</span></li>
+        </ul>
+      </div>
+      <div class="copy">
+        <p>I'm a professional actor and comedy writer who makes ads that people choose to watch. I trained at The Groundlings in Los Angeles, all the way through the Advanced Sketch Writing Lab, and I've acted in comedies from Steve Carell's Angie Tribeca to Rob Schneider's Real Rob.</p>
+        <p>I've also been the lead writer and cinematic director on a AAA video game, writing for Kim Basinger, Danny Glover, Michael Rooker and Chuck Norris. Now I bring that same craft to your product: a sharp concept, a real performance and a finished ad, ready to post.</p>
+        <p>I can play your customer, your expert or your CEO. I work remotely with brands anywhere.</p>
+        <p class="straight">Need it played straight? I also make UGC-style ads and on-camera spokesperson videos for SaaS, finance and health brands, including technical explainers with 35,000+ views each. <a href="https://vimeo.com/showcase/11923803" target="_blank" rel="noopener">See my UGC Work</a> - <a href="https://vimeo.com/showcase/11923829" target="_blank" rel="noopener">See my Spokesperson Work</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block band" id="how" style="border-top: 1px solid var(--line);">
+    <div class="wrap">
+      <div class="head">
+        <p class="script fade">HOW IT WORKS</p>
+        <h2>Four scenes. No agency runaround.</h2>
+      </div>
+      <ol class="steps">
+        <li><h3>Pick and pay</h3><p>Choose a package. Checkout takes a minute.</p></li>
+        <li><h3>Tell me the product</h3><p>A short form asks for your product, audience, deadline and any script or brand assets.</p></li>
+        <li><h3>Approve the concept</h3><p>You see the script or concept before I roll camera, so there are no surprises.</p></li>
+        <li><h3>Get your ad</h3><p>Fully edited, captioned and ready to post, on the date we agreed.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block band faq" id="faq" style="border-top: 1px solid var(--line);">
+    <div class="wrap">
+      <div class="head">
+        <p class="script fade">Q&amp;A</p>
+        <h2>Questions people ask before they laugh.</h2>
+      </div>
+      <div>
+        <details><summary>Can comedy work for my product?</summary><p>Almost always. I've made funny ads for restaurant software, personal care products, apps and online stores. If it has a customer with a problem, there's a joke in it.</p></details>
+        <details><summary>Do I need a script?</summary><p>No. Send yours, or add Written by KJG and I'll write it. Not sure where to start? The Pitch Meeting gets you three concepts for $95.</p></details>
+        <details><summary>Can I run it as a paid ad?</summary><p>Yes. Every video includes organic social use. Paid-ad usage is an add-on, starting at +30% for 3 months.</p></details>
+        <details><summary>How long does delivery take?</summary><p>It depends on the script and the shoot. You get a firm delivery date before any work starts. Have a deadline? Tell me on the call and I'll say honestly whether I can hit it.</p></details>
+        <details><summary>Can I get just the raw footage?</summary><p>Yes. <a href="https://calendly.com/kerbyjoegrubb/30min" target="_blank" rel="noopener">Book a call</a> and I'll quote it.</p></details>
+        <details><summary>Do you post the videos?</summary><p>No. I play a character, your customer, your expert or your CEO, and you post the video on your own channels.</p></details>
+        <details><summary>Can my likeness or voice be used with AI?</summary><p>No. My contract rules out using my likeness or voice to train or generate AI content, and keeps my real name off your ads. Trust me, you want it that way.</p></details>
+        <details><summary>Can kids appear in the video?</summary><p>I'm happy to play a parent, and a kid. No real children on camera.</p></details>
+        <details><summary>How do I pay?</summary><p>By card at checkout. Larger projects and series are 50% up front, with the balance due before final files.</p></details>
+        <details><summary>Do you make straight, non-comedy videos?</summary><p>Yes: UGC-style ads and spokesperson videos. See my <a href="https://vimeo.com/showcase/11923803" target="_blank" rel="noopener">Full UGC Portfolio</a> - <a href="https://vimeo.com/showcase/11923829" target="_blank" rel="noopener">Full Spokesperson Portfolio</a>, or <a href="https://calendly.com/kerbyjoegrubb/30min" target="_blank" rel="noopener">book a call</a>.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="block band closer" id="contact">
+    <div class="wrap">
+      <p class="script" style="opacity:.7">SMASH CUT TO:</p>
+      <h2>Let's make your product the <span class="hl">funny one.</span></h2>
+      <p>Pick a package, or book a call and tell me what you're selling.</p>
+      <div class="ctas">
+        <a class="btn btn-order" href="#packages">Order your funny ad <span class="arr" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn-line" href="https://calendly.com/kerbyjoegrubb/30min" target="_blank" rel="noopener" id="book-call">Book a call</a>
+      </div>
+      <div class="contact">
+        <span>Email:</span><code id="email">hello@KJGcomedy.com</code>
+        <button class="copy-btn" type="button" id="copy-email">Copy</button>
+      </div>
+    </div>
+  </section>
+</main>
+<a class="sticky-order" href="#packages" aria-label="Order your funny ad, from $295">Order your funny ad &ndash; from $295</a><script>(function(){var b=document.querySelector(".sticky-order"),w=[document.querySelector(".hero"),document.getElementById("packages"),document.querySelector(".closer")].filter(Boolean);if(!b||!("IntersectionObserver" in window))return;var v=new Map();function u(){var any=false;v.forEach(function(x){if(x)any=true});b.classList.toggle("on",!any)}w.forEach(function(el){v.set(el,true);new IntersectionObserver(function(e){v.set(el,e[0].isIntersecting);u()}).observe(el)})})();</script>
+
+<footer class="band">
+  <div class="wrap">
+    <span>&copy; <span id="yr">2026</span> KJG Comedy &middot; Comedy ads and on-camera spokesperson videos</span>
+    <nav aria-label="Comedy ads by type">
+      <a href="/funny-saas-video-ads">SaaS ads</a>
+      <a href="/comedy-app-ads">App ads</a>
+      <a href="/funny-product-ads">Product ads</a>
+      <a href="/comedy-spokesperson">Funny spokesperson</a>
+      <a href="/comedy-ad-examples">Ad examples</a>
+      <a href="/funny-explainer-videos">Explainer videos</a>
+      <a href="/comedy-ugc-ads">UGC ads</a>
+      <a href="/funny-ecommerce-ads">Ecommerce ads</a>
+      <a href="/comedic-actor-for-hire">Comedic actor</a>
+    </nav>
+    <nav aria-label="Portfolio">
+      <a href="https://vimeo.com/showcase/11364165" target="_blank" rel="noopener">Comedy</a>
+      <a href="https://vimeo.com/showcase/11923829" target="_blank" rel="noopener">Spokesperson</a>
+      <a href="https://vimeo.com/showcase/11923803" target="_blank" rel="noopener">UGC</a>
+      <a href="https://www.linkedin.com/in/kerby-joe-grubb/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </div>
+</footer>
+<dialog id="player" aria-label="Video player"><button class="close" type="button" aria-label="Close video">&times;</button><div class="pbox"></div></dialog>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+document.getElementById('copy-email').addEventListener('click', function () {
+  var btn = this, text = document.getElementById('email').textContent;
+  function done(ok) { btn.textContent = ok ? 'Copied' : 'Select and copy'; setTimeout(function () { btn.textContent = 'Copy'; }, 1800); }
+  try {
+    navigator.clipboard.writeText(text).then(function () { done(true); }, function () { selectIt(); done(false); });
+  } catch (e) { selectIt(); done(false); }
+  function selectIt() { var r = document.createRange(); r.selectNodeContents(document.getElementById('email')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+});
+
+(function () {
+  var dlg = document.getElementById('player');
+  if (!dlg || !dlg.showModal || !/(^|\.)kjgcomedy\.com$/.test(location.hostname)) return;
+  var box = dlg.querySelector('.pbox');
+  function shut() { dlg.close(); }
+  dlg.addEventListener('close', function () { box.innerHTML = ''; });
+  dlg.addEventListener('click', function (e) { if (e.target === dlg) shut(); });
+  dlg.querySelector('.close').addEventListener('click', shut);
+  document.querySelectorAll('a.reel').forEach(function (a) {
+    var m = a.href.match(/vimeo\.com\/(\d+)/);
+    if (!m) return;
+    a.addEventListener('click', function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button) return;
+      e.preventDefault();
+      box.className = 'pbox' + (a.hasAttribute('data-wide') ? ' wide' : '');
+      var touch = window.matchMedia && matchMedia('(pointer: coarse)').matches;
+      box.innerHTML = '<iframe src="https://player.vimeo.com/video/' + m[1] + '?dnt=1' + (touch ? '' : '&autoplay=1') + '" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Video"></iframe>';
+      dlg.showModal();
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
